@@ -1,6 +1,8 @@
 # Bateman
 
-TODO: Write a gem description
+[![Build Status](https://travis-ci.org/geoffharcourt/bateman.png?branch=master)](https://travis-ci.org/geoffharcourt/bateman)
+
+Bateman [knows cards](http://www.youtube.com/watch?v=qoIvd3zzu4Y). Use Bateman to fetch [Twitter Card](https://dev.twitter.com/docs/cards) data from any URL. `Bateman::TwitterCard` will fall back to [Open Graph](http://ogp.me) or basic HTML defaults if Twitter data is missing.
 
 ## Installation
 
@@ -18,7 +20,27 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Pull the Twitter Card data (if available) from a URL:
+
+    Bateman::TwitterCard.new("http://example.com/articles/1")
+
+`Bateman::TwitterCard` has the following attributes available:
+
+    #card
+    #creator
+    #description
+    #image
+    #site
+    #title
+    #url
+
+## Dependencies
+
+Bateman uses [HTTParty](https://github.com/jnunemaker/httparty) and [Nokogiri](http://nokogiri.org) to pull HTTP and process HTML data.
+
+## Credits
+
+Sydney was created and is maintained by [Geoff Harcourt](http://github.com/geoffharcourt) at [Five Tool Development](http://fivetool.io).
 
 ## Contributing
 
