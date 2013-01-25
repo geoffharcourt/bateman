@@ -1,6 +1,8 @@
 # Bateman
 
+[![Gem Version](https://badge.fury.io/rb/sydney.png)](http://badge.fury.io/rb/bateman)
 [![Build Status](https://travis-ci.org/geoffharcourt/bateman.png?branch=master)](https://travis-ci.org/geoffharcourt/bateman)
+[![Dependency Status](https://gemnasium.com/geoffharcourt/bateman.png)](https://gemnasium.com/geoffharcourt/bateman)
 [![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/geoffharcourt/bateman)
 
 Bateman [knows cards](http://www.youtube.com/watch?v=qoIvd3zzu4Y). Use Bateman to fetch [Twitter Card](https://dev.twitter.com/docs/cards) data from any URL. `Bateman::TwitterCard` will fall back to [Open Graph](http://ogp.me) or basic HTML defaults if Twitter data is missing.
